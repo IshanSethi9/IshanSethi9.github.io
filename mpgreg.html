@@ -1,0 +1,332 @@
+
+
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Predict fuel efficiency</title>
+    <meta name="description" content="">
+    <meta name="msapplication-tap-highlight" content="yes" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <!-- Google Web Font -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lekton:400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <!--  Bootstrap 3-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
+
+    <!--  Slider -->
+    <link rel="stylesheet" href="css/jquery.kenburnsy.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- Web Icons Font -->
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="css/iconmoon.css">
+    <link rel="stylesheet" href="css/et-line.css">
+    <link rel="stylesheet" href="css/ionicons.css">
+
+    <!-- Magnific PopUp -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!-- Tabs -->
+    <link rel="stylesheet" type="text/css" href="css/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="css/tabstyles.css" />
+
+    <!-- Loader Style -->
+    <link rel="stylesheet" href="css/loader-1.css">
+
+    <!-- Costum Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/ico" href="favicon.ico">
+
+    <!-- Modernizer & Respond js -->
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Preloader -->
+   <div class="cover"></div>
+
+    <div class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/is.jpg" width=75px height=75px alt="Logo">
+                </a>
+            </div>
+            
+            <!-- Menu Hamburger (Default) -->
+            <button class="main-menu-indicator" id="open-button">
+                <span class="line"></span>
+            </button>
+            
+            <div class="menu-wrap" style="background-image: url(img/nav_bg.jpg)">
+                <div class="menu-content">
+                    <div class="navigation">
+                        <span class="pe-7s-close close-menu" id="close-button"></span>
+                       
+                    </div>
+                    <nav class="menu">
+                        <div class="menu-list">
+                            <ul>
+                                <li class="menu-item-has-children"><a href="index.html">Home</a>
+                                </li>
+                                <li><a href="hackathons.html">Hackathon</a></li>
+                                <li class="menu-item-has-children"><a href="#">Project</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="carcontrol.html">-Car Control</a></li>
+                                        <li><a href="parallel.html">-Parallel</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-has-children"><a href="#">Machine Learning</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="bostonreg.html">-Boston Housing Price</a></li>
+                                        <li><a href="#">-Car Fuel Efficiency</a></li>
+                                        <li><a href="titanicpred.html">-Titanic Survival</a></li>
+                                    </ul>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </nav>
+
+                    <div class="hidden-xs">
+                        <div class="menu-social-media">
+                            <ul>
+                               <li><a href="https://www.facebook.com/"><i class="iconmoon-facebook"></i></a></li>
+                               <li><a href="https://twitter.com/explore"><i class="iconmoon-twitter"></i></a></li>
+                               <li><a href="https://www.linkedin.com/"><i class="iconmoon-linkedin2"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="menu-information">
+                            <ul>
+                                <li><span>Phone:</span> 9810674394</li>
+                                <li><span>Email:</span> Ishanblaster1000@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Menu Hamburger (Default) -->
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="single-project-slider">
+            <div class="owl-carousel single-slider">
+                <div><img class="img-responsive center-block" src="img/mpg.png" alt="slider"></div>
+                <div><img class="img-responsive center-block" src="img/mpg2.jpg" alt="slider"></div>
+            </div>
+            <div class="single-controls">
+                <span class="arrow-left"><a class="prev-slide" href="javascript:void(0)"><i class="pe-7s-angle-left"></i></a></span>
+                <span class="arrow-right"><a class="next-slide" href="javascript:void(0)"><i class="pe-7s-angle-right"></i></a></span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="single-portfolio-wrapper">
+            <div class="row">
+                <div class="col-md-8 col-sm-8">
+                    <h1>Predict Fuel Efficiency</h1>
+                    <span class="info">Regression Problem</span>
+                    <p>I’m going to walk you through how to perform a multiple linear regression in python using the scikit-learn module.The scikit-learn module in python is basically used to perform machine learning tasks.It contains a number of machine learning models and algorithms that are very good and helpful to use.Among these models are the regression models that are used to perform both simple and multiple linear regression. Linear regression analysis,also known as linear modelling entails fitting a straight line,a plane or polynomial to a data.Like most of the machine learning algorithms,the goal of linear regression regression is to predict an output variable using other variables.Linear regression expresses the output variable or dependent variable as a function or a linear combination of the independent variables or the predictor variables.The data we will be using for our regression analysis comprises of some technical specs of some cars.The data set is downloaded from UCI Machine Learning Repository.
+</p><br>
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-4">
+                    <div class="project-information">
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Date:</td>
+                                    <td>‎July ‎10, ‎2020</td>
+                                </tr>
+                            
+                                <tr>
+                                    <td>Category:</td>
+                                    <td>Regression</td>
+                                </tr>
+                                <tr>
+                                    <td>Visit:</td>
+                                    <td><a href="https://colab.research.google.com/drive/1uPsxi6JZsJkBhAik_J4X8ncKJVOBVk41?usp=sharing" target="_blank">Miles Per Gallon Regression</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Share:</td>
+                                    <td>
+                                        <ul class="social-buttons">
+                                            <li><a href="javasript:void(0);" data-social="fb"><i class="iconmoon-facebook"></i></a></li>
+                                            <li>
+                                                <a href="javascript:void(0);" data-social="tw"> <i class="iconmoon-twitter"></i></a>
+                                            </li>
+                                            <li><a href="javascript:void(0);" data-social="pt"><i class="iconmoon-pinterest"></i></a></li>
+                                            <li><a href="javascript:void(0);" data-social="ln"><i class="iconmoon-linkedin"></i></a></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="single-project-details">
+            <div class="row">
+                <div class="col-md-6 col-sm-6">
+                    <div class="single-project-images">
+<br>
+<br>
+<Br>
+                        <img src="img/mpg3.png" alt="Single Project">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <div class="single-project-images">
+                        <img src="img/mpg4.png" alt="Single Project">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="portfolio-controls">
+            <div class="btn-project home-btn">
+                <a href="#" data-hover="Home">
+                    <i class="pe-7s-keypad"></i>
+                </a>
+            </div>
+            <div class="btn-project forward-btn">
+                <a href="titanicpred.html" data-hover="Next">
+                    <i class="pe-7s-angle-right right"></i>
+                </a>
+            </div>
+            <div class="btn-project back-btn">
+                <a href="bostonreg.html" data-hover="Previous">
+                    <i class="pe-7s-angle-left left"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container margin-top">
+        <div class="similar-project">
+            <h4>Similar Projects</h4>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="img">
+                        <img src="img/mpg.png" alt="Portfolio Item" width=320px >
+                        <div class="overlay-thumb">
+          
+                            <div class="details">
+                                <span class="title">Predict Fuel Efficiency</span>
+                                <span class="info">Regression</span>
+                            </div>
+                            <span class="btnBefore"></span>
+                            <span class="btnAfter"></span>
+                            <a class="main-portfolio-link" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="img">
+                        <img src="img/titanic.jpg" width=500px height=500px >
+                        <div class="overlay-thumb">
+                            
+                            <div class="details">
+                                <span class="title">Titanic Survival</span>
+                                <span class="info">Classification</span>
+                            </div>
+                            <span class="btnBefore"></span>
+                            <span class="btnAfter"></span>
+                            <a class="main-portfolio-link" href="titanicpred.html"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="img">
+                        <img src="img/boston.jpg" alt="Portfolio Item" width=280px>
+                        <div class="overlay-thumb">
+                           
+                            <div class="details">
+                                <span class="title">Boston House Prices</span>
+                                <span class="info">Regression</span>
+                            </div>
+                            <span class="btnBefore"></span>
+                            <span class="btnAfter"></span>
+                            <a class="main-portfolio-link" href="bostonreg.html"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="footer margin-top">
+                <div class="container">
+                    <div class="row">
+        
+
+                            <div class="col-md-2 col-md-push-8 col-sm-4 col-xs-12">
+                                <div class="footer-inner">
+                                    <div class="footer-content">
+                                       <h4>CONTACT INFO</h4>
+                                        <p>
+                                            Phone : 9810674394 <br>
+                                            Email:Ishanblaster1000@gmail.com <br>
+                                            LinkedIn : <a href="https://www.linkedin.com/in/ishansethi09">LinkedIn</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="footer-inner">
+                                    <div class="footer-content">
+                                    <ul class="social-media">
+                                        <li><a href="https://www.facebook.com/"><i class="iconmoon-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/explore"><i class="iconmoon-twitter"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/"><i class="iconmoon-linkedin2"></i></a></li>
+                                    </ul>
+                                    <span><center>Last updated : October 5, 2020</center></span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+
+    <a href="javascript:void(0)" class="scroll-top" id="scroll-top"><i class="pe-7s-angle-up"></i></a>
+
+    <script src="js/vendor/jquery-1.11.2.min.js"></script>
+    <script data-pace-options='{ "ajax": false }' src="js/vendor/pace.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/vendor/classie.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+    <script src="js/vendor/jquery.velocity.min.js"></script>
+    <script src="js/vendor/jquery.kenburnsy.min.js"></script>
+    <script src="js/vendor/textslide.js"></script>
+    <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="js/vendor/tabs.js"></script>
+    <script src="js/ef-slider.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="js/vendor/jquery.social-buttons.min.js"></script>
+    <script src="js/vendor/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/ajax.js"></script>
+</body>
+
+</html>
